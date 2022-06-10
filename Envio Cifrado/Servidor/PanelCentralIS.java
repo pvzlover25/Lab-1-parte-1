@@ -109,7 +109,7 @@ public class PanelCentralIS extends JPanel implements Runnable{
                 if(escritor==null) escritor=new FileOutputStream(archivoAguardar);
                 for(int i=partes[indice];i<partes[indice+1]-1;i++){
                     String aux=Descifrado.desencriptar(datos[i]);
-                    byte escribir=Byte.parseByte(aux);
+                    int escribir=Integer.parseInt(aux);
                     escritor.write(escribir);
                 }
                 largo+=30;
