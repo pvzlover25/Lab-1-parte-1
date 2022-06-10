@@ -1,5 +1,4 @@
-package envioarchivo;
-import Servidor.VentanaInicialS;
+package Servidor;
 import java.awt.*;
 import javax.swing.*;
 
